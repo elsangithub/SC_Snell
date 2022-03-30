@@ -21,7 +21,7 @@ apt install neofetch -y
 
 #profile
 echo -e 'profile' >> /root/.profile
-wget -O /usr/bin/profile "https://script.lingssh.com/profile.sh";
+wget -O /usr/bin/profile "https://raw.githubusercontent.com/elsangithub/SC_Snell/main/profile.sh";
 chmod +x /usr/bin/profile
 apt install neofetch -y;
 
@@ -37,7 +37,7 @@ echo "/usr/sbin/nologin" >> /etc/shells;
 apt -y install vnstat;
 /etc/init.d/vnstat restart;
 apt -y install libsqlite3-dev;
-wget https://humdi.net/vnstat/vnstat-2.6.tar.gz;
+wget https://github.com/elsangithub/SC_Snell/blob/main/Vinstat/vnstat-2.6.tar.gz;
 tar zxvf vnstat-2.6.tar.gz;
 cd vnstat-2.6;
 ./configure --prefix=/usr --sysconfdir=/etc && make && make install;
@@ -49,7 +49,7 @@ rm -f /root/vnstat-2.6.tar.gz;
 rm -rf /root/vnstat-2.6;
 
 #Install Speedtest
-curl -s https://install.speedtest.net/app/cli/install.deb.sh | sudo bash
+curl -s https://raw.githubusercontent.com/elsangithub/SC_Snell/main/speedtest/install.deb.sh | sudo bash
 sudo apt-get install speedtest -y
 
 #install hysteria
@@ -64,7 +64,7 @@ timedatectl set-timezone Asia/Jakarta
 chronyc sourcestats -v
 chronyc tracking -v
 date
-wget https://github.com/surge-networks/snell/releases/download/v3.0.1/snell-server-v3.0.1-linux-amd64.zip && unzip snell-server-v3.0.1-linux-amd64.zip && mv snell-server /usr/local/bin/
+wget https://github.com/elsangithub/SC_Snell/blob/main/Snell/snell-server-v3.0.1-linux-amd64.zip && unzip snell-server-v3.0.1-linux-amd64.zip && mv snell-server /usr/local/bin/
 rm -f snell-server-v3.0.1-linux-amd64.zip
 cat > /etc/systemd/system/snell.service <<-END
 [Unit]
