@@ -1,4 +1,4 @@
-# Instaler
+# Command Install
 ## 1
 ```
 apt update && apt upgrade -y  && apt install wget -y
