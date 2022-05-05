@@ -25,7 +25,6 @@ proxies:
         mode: tls
         host: bug.com
     sni: bug.com
-    ```
-    
+```
 #### Root only Debian 9/10 (test Debian 10)
 #### Source : LingSSH
