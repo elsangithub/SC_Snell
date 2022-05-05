@@ -11,9 +11,8 @@ wget https://raw.githubusercontent.com/elsangithub/SC_Snell/main/snell.sh && chm
 ```
 nano /etc/snell-server.conf
 ```
-#### Root only Debian 9/10 (test Debian 10)
-#### Source : LingSSH
 
+### Format Openclash
 ```
 proxies:
   - name: Nama Akun
@@ -27,3 +26,6 @@ proxies:
         host: bug.com
     sni: bug.com
     ```
+    
+#### Root only Debian 9/10 (test Debian 10)
+#### Source : LingSSH
