@@ -13,3 +13,17 @@ nano /etc/snell-server.conf
 ```
 #### Root only Debian 9/10 (test Debian 10)
 #### Source : LingSSH
+
+```
+proxies:
+  - name: Nama Akun
+    type: snell
+    server: 128.199.79.115
+    port: 443
+    psk: elsande123
+    version: '3'
+    obfs-opts:
+        mode: tls
+        host: bug.com
+    sni: bug.com
+    ```
